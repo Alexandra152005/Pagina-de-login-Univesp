@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    background-image: url('../login/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Playfair Display, sans-serif;
+    margin: 0px;
+    max-width: 1200px;
+    padding: 0px;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content:right;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{
+    font-size: 4vw;
+    color:black;
+}
+
+.left-login > h1:hover{
+    color:#bb0b0b;
+}
+
+.img-login{
+    width: 45vw;
+    align-items: center;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px;
+}
+
+.card-login:hover{
+    background-color: black;
+}
+
+.card-login > h1{
+    color: #f7f7f5;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield > input:hover{
+    background-color:white;
+    transition: 3ms;
+}
+
+.login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color:#f7f7f5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px;
+}
+
+.login > h1{
+    color: pink;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background:#f7f7f5;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px black;
+    outline:none;
+    box-sizing: border-box;
+}
+
+.textfield > input:hover{   /*MUDA A COR DE DENTRO DOS INPUTS*/
+    background-color:gray;
+}
+
+.textfield > label{
+    color:white;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{      /*MUDA A COR DAS LETRAS DENTRO DAS CAIXINHAS*/
+    color: black;
+}
+
+.bnt-login{
+    width: 60%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.bnt-login:hover{
+    background-color: gray;
+}
+
+
+@media only screen and (max-width: 950px){
+    .login{
+        width: 85%;
+    }
+}
+
+@media only screen and(max-width: 600px){
+    .login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50vh;
+    }
+    .login{
+        width: 90%;
+    }
+}
