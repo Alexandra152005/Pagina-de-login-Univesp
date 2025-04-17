@@ -34,12 +34,10 @@ body * {
 
 .left-login > h1{
     font-size: 4vw;
-    color:black;
+    color:white;
 }
 
-.left-login > h1:hover{
-    color:#bb0b0b;
-}
+
 
 .img-login{
     width: 45vw;
