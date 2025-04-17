@@ -145,7 +145,8 @@ body * {
 }
 
 .bnt-login:hover{
-    background-color: gray;
+    background-color: black;
+    color:white;
 }
 
 
