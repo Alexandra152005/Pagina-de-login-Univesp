@@ -115,8 +115,9 @@ body * {
     box-sizing: border-box;
 }
 
-.textfield > input:hover{   /*MUDA A COR DE DENTRO DOS INPUTS*/
-    background-color:gray;
+.textfield > input:hover{
+    background-color:white;
+    transition: 3ms;
 }
 
 .textfield > label{
